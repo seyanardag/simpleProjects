@@ -12,3 +12,8 @@ function btnClick() {
     parag[0].innerText ="Background Color:"+ bgcolor
 }
 
+function btnDiscoClick() {
+  setInterval(() => {
+    btnClick()
+  }, 50);
+}
