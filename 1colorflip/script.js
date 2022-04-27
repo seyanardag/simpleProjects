@@ -2,7 +2,7 @@ let bgcolor = "red";
 let bodyClass = document.querySelector(".bodyClass");
 let parag = document.getElementsByTagName("p");
 let stopButton =document.getElementById("stopButton")
-stopButton.style.visibility="collapse"
+stopButton.style.display="none"
 
 function btnClick() {
   let rnd1 = Math.floor(Math.random() * 255);
@@ -16,7 +16,7 @@ function btnClick() {
 
 var discoInterval=null
 function btnDiscoClick() {
-  stopButton.style.visibility="visible"
+  stopButton.style.display="initial"
   discoInterval = setInterval(btnClick, 150);
   
 }
