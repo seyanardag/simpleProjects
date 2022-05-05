@@ -74,15 +74,15 @@ p {
   /* border: 2px solid red; */
 }
 
-.parentDiv {
+/* .parentDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "Jost", sans-serif;
   font-size: 14px;
-  /* border: 2px solid rgb(76, 189, 64); */
-}
+  border: 2px solid rgb(76, 189, 64);
+} */
 
 .buttonsDiv {
   display: flex;
