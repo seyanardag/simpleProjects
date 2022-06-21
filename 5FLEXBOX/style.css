@@ -9,7 +9,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-
   background-color: rgb(172, 171, 173);
 }
 
@@ -42,3 +41,23 @@ li {
   /* border: 1px solid blue; */
 }
 
+@media screen and (max-width:610px){
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .button{
+    margin: 5px;
+  }
+
+}
