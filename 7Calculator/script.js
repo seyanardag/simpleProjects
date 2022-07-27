@@ -1,12 +1,36 @@
 let screenDigit = document.querySelector("#screen");
 let number1 = "";
+let tempResult = 0;
+let isScrnEmpty = true;
 
-function printScrn(params) {
+function printerHelperFunc(params) {
   params = params.toString();
   number1 += params;
-  console.log(typeof number1);
   screenDigit.innerHTML = number1;
 }
+
+function printToScrn(params) {
+  if (isScrnEmpty) {
+    printerHelperFunc(params);
+  } else {
+    screenDigit.innerHTML = "";
+    number1 = "";
+    printerHelperFunc(params);
+    isScrnEmpty = true;
+  }
+}
+
+
+//////////////////////////////////
+function printToScrn2() {    
+    number1 += "(";
+    screenDigit.innerHTML = number1; 
+}
+function printToScrn3() {    
+    number1 += ")";
+    screenDigit.innerHTML = number1; 
+}
+//////////////////////////////////
 
 function CEclear() {
   number1 = "";
@@ -14,6 +38,27 @@ function CEclear() {
 }
 
 function findResult() {
-  console.log(eval(screenDigit.innerHTML));
-  screenDigit.innerHTML = eval(screenDigit.innerHTML);
+  tempResult = screenDigit.innerHTML;
+  screenDigit.innerHTML = "";
+  setTimeout(() => {
+    screenDigit.innerHTML = eval(tempResult);
+  }, 300);
+  isScrnEmpty = false;
+}
+
+let newNumber;
+function Bspc() {
+  newNumber = screenDigit.innerHTML.split('')
+  console.log(newNumber)
+  newNumber.pop();
+  console.log(newNumber)
+  screenDigit.innerHTML ="";
+
+  newNumber.forEach(element => {
+    screenDigit.innerHTML += element
+  
+  });
+  number1=screenDigit.innerHTML
+  console.log(screenDigit.innerHTML)
+
 }
