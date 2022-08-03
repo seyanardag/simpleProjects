@@ -17,6 +17,13 @@ div {
     /* font-style: normal; */
 
    }
+@font-face {
+    font-family: Casio;   
+    src: url(font/ncc1701a.ttf);   
+    /* font-weight: bold;    */
+    /* font-style: normal; */
+
+   }
 
 label {
 font-family:Digital, sans-serif;
@@ -41,6 +48,26 @@ grid-column-end: 3;
     border-radius: 10px;
     
 }
+
+.infoParent{
+    display: flex;
+    flex-direction: row;
+}
+.info {
+    flex-grow: 1;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.casio {
+    font-family: Casio;
+}
+.bosDiv {
+    flex-grow: 2;
+}
+
 .solarPanel {
     width: 100%;
     /* float: right; */
