@@ -1,117 +1,126 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* border: 1px solid gray; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid gray; */
 }
 
 div {
-    border: 1px solid blue;     
+  border: 1px solid blue;
 }
 
+@font-face {
+  font-family: Digital;
+  src: url(font/digital-7.ttf);
+  /* font-weight: bold;    */
+  /* font-style: normal; */
+}
+@font-face {
+  font-family: Casio;
+  src: url(font/ncc1701a.ttf);
+  /* font-weight: bold;    */
+  /* font-style: normal; */
+}
 
 @font-face {
-    font-family: Digital;   
-    src: url(font/digital-7.ttf);   
-    /* font-weight: bold;    */
-    /* font-style: normal; */
-
-   }
-@font-face {
-    font-family: Casio;   
-    src: url(font/ncc1701a.ttf);   
-    /* font-weight: bold;    */
-    /* font-style: normal; */
-
-   }
+  font-family: "Imaki-Italic";
+  src: url() format("woff"),
+    url("Imaki-Italic.ttf.svg#Imaki-Italic") format("svg"),
+    url("Imaki-Italic.ttf.eot"),
+    url("Imaki-Italic.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 label {
-font-family:Digital, sans-serif;
-font-size: 60px;
-width: 550px;
-text-align: end;
-margin: 10px auto;
-background-color: rgb(227, 223, 223);
-/* margin:  auto 1px auto auto ; */
-padding: 10px;
-grid-column-start: 1;
-grid-column-end: 3;
+  font-family: Digital, sans-serif;
+  font-size: 60px;
+  width: 550px;
+  text-align: end;
+  margin: 10px auto;
+  background-color: rgb(227, 223, 223);
+  /* margin:  auto 1px auto auto ; */
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .container {
-    width: min-content;
-    margin: 10px auto;
-    padding: 12px 10px;
-    display: grid;
-    grid: auto 90px 400px / 3fr 1fr;
-    border: 2px solid rgb(227, 223, 223);
-    border-radius: 10px;
-    
+  width: min-content;
+  margin: 10px auto;
+  padding: 12px 10px;
+  display: grid;
+  grid: auto 90px 400px / 3fr 1fr;
+  border: 2px solid rgb(227, 223, 223);
+  border-radius: 10px;
 }
 
-.infoParent{
-    display: flex;
-    flex-direction: row;
+.infoParent {
+  display: flex;
+  flex-direction: row;
 }
 .info {
-    flex-grow: 1;
-    /* display: block; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  flex-grow: 1;
+  /* display: block; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .casio {
-    font-family: Casio;
+  font-family: Casio;
+}
+
+.naturalDisplay {
+    font-family: 'Imaki-Italic';
 }
 .bosDiv {
-    flex-grow: 2;
+  flex-grow: 2;
 }
 
 .solarPanel {
-    width: 100%;
-    /* float: right; */
-    
+  width: 100%;
+  /* float: right; */
 }
 
 .numbers {
-    width: 370px;
-    display: grid;
-    grid: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr ;
-    justify-items: center;
-    align-items: center;
-    gap: 15px;
-    /* padding: 15px; */
+  width: 370px;
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 15px;
+  /* padding: 15px; */
 }
 .numberBtn {
+  align-items: center;
+  font-size: 30px;
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  font-weight: 900;
+  cursor: pointer;
+  border: transparent;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
 
-    align-items: center;
-    font-size: 30px;
-    width:80px;
-    height: 80px;    
-        border-radius: 5px;       
-        font-weight: 900;
-        cursor: pointer;       
-        border: transparent;      
-        text-shadow: 0px 2px 2px rgba(0,0,0,0.4);   
-
-    background: linear-gradient(180deg,#e6e6e6 0%,
-				rgba(0,0,0,0.25) 30%,
-				rgba(38,38,38,0.6) 71%,
-				rgba(0,0,0,0.25) 100%);
+  background: linear-gradient(
+    180deg,
+    #e6e6e6 0%,
+    rgba(0, 0, 0, 0.25) 30%,
+    rgba(38, 38, 38, 0.6) 71%,
+    rgba(0, 0, 0, 0.25) 100%
+  );
 }
 
 .numberBtn:active {
-    transform: translate(2px,2px);
-    /* -webkit-transform: translate(2px); */
+  transform: translate(2px, 2px);
+  /* -webkit-transform: translate(2px); */
 }
 
 .operators {
-    display: grid;
-    grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
-    column-gap: 20px;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr / 1fr 1fr;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
-
-
