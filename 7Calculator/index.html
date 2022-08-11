@@ -8,49 +8,54 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="infoParent">
+    <div class="container"> 
+      <div class="infoSolar">
         <div class="info">
-          <p class="casio">CASIO</p>
+          <p class="casio">CASIO</p>          
           <h3 class="fx115">fx-115 SeyFx</h3>
           <h2 class="naturalDisplay">NATURAL DISPLAY</h2>
-        </div>
-        <div class="bosDiv">boşşş</div>
-      </div>  
-        <div>
+        </div>       
+        
+        <div class="solarPanelDiv">
           <img class="solarPanel" src="./img/calc solar panel.png" alt="" srcset="">
+          <P class="">TWO WAY POWER</P>
         </div>
-        <label for="" id="screen"> 0 </label>
-        <!-- <div></div> -->
-
-      
-        <div class="numbers">
-          <button class="numberBtn num9" onclick="printToScrn(9)">9</button>
-          <button class="numberBtn num8" onclick="printToScrn(8)">8</button>
-          <button class="numberBtn num7" onclick="printToScrn(7)">7</button>
-          <button class="numberBtn num6" onclick="printToScrn(6)">6</button>
-          <button class="numberBtn num5" onclick="printToScrn(5)">5</button>
-          <button class="numberBtn num4" onclick="printToScrn(4)">4</button>
-          <button class="numberBtn num3" onclick="printToScrn(3)">3</button>
-          <button class="numberBtn num2" onclick="printToScrn(2)">2</button>
-          <button class="numberBtn num1" onclick="printToScrn(1)">1</button>
-          <button class="numberBtn num," onclick="findResult()">=</button>
-          <button class="numberBtn num0" onclick="printToScrn(0)">0</button>
-          <button class="numberBtn num," onclick="printToScrn('.')">,</button>
+      </div>     
+        <div id="screenDiv">
+          <label class="screen" for="" id="screen"> 0 </label>
         </div>
         
-        <div class="operators">
-          <button class="numberBtn num+" onclick="printToScrn('+')">+</button>
-          <button class="numberBtn num+" onclick="printToScrn2()">(</button>
-          <button class="numberBtn num-" onclick="printToScrn('-')">-</button>
-          <button class="numberBtn num+" onclick="printToScrn3()">)</button>
-          <button class="numberBtn num*" onclick="printToScrn('*')">*</button>
-          <button class="numberBtn numCE" onclick="CEclear()">CE</button>
-          <button class="numberBtn num/" onclick="printToScrn('/')">/</button>
-          <button class="numberBtn num/" onclick="Bspc()">Bspc</button>
+        <div class="buttons">
+
+          <div class="numbers">
+            <button class="numberBtn num9" onclick="printToScrn(9)">9</button>
+            <button class="numberBtn num8" onclick="printToScrn(8)">8</button>
+            <button class="numberBtn num7" onclick="printToScrn(7)">7</button>
+            <button class="numberBtn num6" onclick="printToScrn(6)">6</button>
+            <button class="numberBtn num5" onclick="printToScrn(5)">5</button>
+            <button class="numberBtn num4" onclick="printToScrn(4)">4</button>
+            <button class="numberBtn num3" onclick="printToScrn(3)">3</button>
+            <button class="numberBtn num2" onclick="printToScrn(2)">2</button>
+            <button class="numberBtn num1" onclick="printToScrn(1)">1</button>
+            <button class="numberBtn num," onclick="findResult()">=</button>
+            <button class="numberBtn num0" onclick="printToScrn(0)">0</button>
+            <button class="numberBtn num," onclick="printToScrn('.')">,</button>
+          </div>
+          
+          <div class="operators">
+            <button class="numberBtn num+" onclick="printToScrn('+')">+</button>
+            <button class="numberBtn num+" onclick="printToScrn2()">(</button>
+            <button class="numberBtn num-" onclick="printToScrn('-')">-</button>
+            <button class="numberBtn num+" onclick="printToScrn3()">)</button>
+            <button class="numberBtn num*" onclick="printToScrn('*')">*</button>
+            <button class="numberBtn numCE" onclick="CEclear()">CE</button>
+            <button class="numberBtn num/" onclick="printToScrn('/')">/</button>
+            <button class="numberBtn num/" onclick="Bspc()">Bspc</button>
+          </div>
         </div>
-      
-    </div>
+          
+    </>
+
   </body>
 
   <script src="/7Calculator/script.js"></script>
