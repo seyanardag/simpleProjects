@@ -10,6 +10,7 @@ let playerScoreHTML = document.querySelector(".playerScore");
 let pcHand = document.querySelector(".pcHand");
 let playerHand = document.querySelector(".playerHand");
 let resultHTML = document.querySelector(".result");
+let scoreboard = document.querySelector(".scoreboard");
 
 playerScore.innerHTML = 16;
 
@@ -35,7 +36,11 @@ function pcSelectFunc(min, max) {
   }
 }
 
+
+
 function playerSelected(param) {
+  // playerHand.style.transform = 2,5
+  scoreboard.style.visibility = "visible"
   pcSelectFunc(1, 4);
   pcHand.classList.add("rotate180")
   playerSelection = param; //player selection assignment

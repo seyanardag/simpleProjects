@@ -9,7 +9,7 @@
 
 .rotate180 {
     transform: rotate(180deg);
-
+   
     /* bu da kullanılabilir; */
     /* rotate: 180deg; */
 }

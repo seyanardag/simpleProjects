@@ -39,15 +39,12 @@
 
       <!-- Scoreboard Container -->
       <div
-        class="container col-3 align-self-center border border-info rounded bg-info"
+        class="scoreboard container col-3 align-self-center border border-info rounded bg-info" style="visibility:hidden"
       >
-        <h3 class="text-center">SCOREBOARD</h3>
-        <div class="score d-flex flex-column fw-bold">
+        <h3 class="text-center fw-bold mt-2">SCOREBOARD</h3>
+        <div class=" score my-3 d-flex flex-column">
           <div class="d-flex flex-row align-items-center m-0">
-            <div
-              class="mx-auto my-5 d-flex flex-row"
-              style="width: 65px; height: 65px"
-            >
+            <div class="mx-auto my-3 d-flex flex-row" style="width: 65px; height: 65px"            >
               <img class="pcHand" src="./img/pcPic.png" alt="" />
             </div>
 
@@ -56,10 +53,10 @@
           </div>
           <div class="d-flex flex-row align-items-center m-0">
             <div
-              class="mx-auto d-flex flex-row"
+              class="mx-auto my-3 d-flex flex-row "
               style="width: 65px; height: 65px"
             >
-              <img class="playerHand" src="./img/playerPic.png" alt="" />
+              <img class="playerHand " src="./img/playerPic.png" alt="" />
             </div>
 
             <h3 class="ms-2">:</h3>
@@ -109,6 +106,13 @@
         </button>
       </div>
     </div>
+
+    <div
+    class="mx-auto d-flex flex-row"
+    style="width: 105px; height: 105px"
+  >
+    <img class="playerHand" src="./img/playerPic.png" alt="" />
+  </div>
 
     <!-- JavaScript Bundle with Popper -->
     <script
