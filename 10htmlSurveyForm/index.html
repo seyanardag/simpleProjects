@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>htmlSurveyForm</title>
+    <!-- CSS only (BOOTSTRAP) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="background-color:rgb(247, 235, 183)">
+    <h2 class="text-center text-dark m-3" style="font-size: clamp(1.5rem, 5vw, 3rem);">HTML Survey Form</h2>
+<!-- ---------------- -->
+    <div class="radiosDiv">
+      <label for="">Would you recommend us to a friend?</label>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="exampleRadios"
+          id="exampleRadios1"
+          value="option1"
+          checked          
+        />
+        <label class="form-check-label" for="exampleRadios1"> Yes </label>
+      </div>
+
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="exampleRadios"
+          id="exampleRadios2"
+          value="option2"
+        />
+        <label class="form-check-label" for="exampleRadios2"> No </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          name="exampleRadios"
+          id="exampleRadios3"
+          value="option2"
+        />
+        <label class="form-check-label" for="exampleRadios3"> Maybe </label>
+      </div>
+    </div>
+
+
+    <!-- ------------ -->
+    <form class="border mx-auto p-4 bg-white  shadow p-3 mb-5 bg-white rounded" style="width: 70vw; 
+    font-size: clamp(1.5rem, 5vw, 3rem);">
+
+    <p>1.5 rem:</p> <script>let a= 5vw</script>
+    <p>5vw:</p>
+    <p>3 rem:</p>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input
+          class="form-control"
+          type="text"
+          id="name"shadow p-3 mb-5 bg-white rounded
+          placeholder="Your Name Here..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Your e-mail Here..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input
+          class="form-control"
+          type="text"
+          id="age"
+          placeholder="Your Age Here..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="">Which option best describes you?</label>
+        <select class="form-control">
+          <option>Student</option>
+          <option>Expert</option>
+          <option>Professional</option>
+        </select>
+      </div>
+
+      <div class="radiosDiv">
+        <label for="">Would you recommend us to a friend?</label>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="exampleRadios"
+            id="exampleRadios1"
+            value="option1"
+            checked
+          />
+          <label class="form-check-label" for="exampleRadios1"> Yes </label>
+        </div>
+
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="exampleRadios"
+            id="exampleRadios2"
+            value="option2"
+          />
+          <label class="form-check-label" for="exampleRadios2"> No </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="exampleRadios"
+            id="exampleRadios3"
+            value="option2"
+          />
+          <label class="form-check-label" for="exampleRadios3"> Maybe </label>
+        </div>
+      </div>
+
+      <label for=""
+        >Languages and Frameworks known (Check all that applies)</label
+      >
+      <div class="checkboxDiv">
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck1"
+          
+        />
+        <label class="form-check-label" for="defaultCheck1"> C </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck2"
+        />
+        <label class="form-check-label" for="defaultCheck2"> C++ </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck3"
+        />
+        <label class="form-check-label" for="defaultCheck3"> C# </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck4"
+        />
+        <label class="form-check-label" for="defaultCheck4"> Java </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck5"
+        />
+        <label class="form-check-label" for="defaultCheck5"> Python </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck6"
+        />
+        <label class="form-check-label" for="defaultCheck6">JavaScript </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck7"
+        />
+        <label class="form-check-label" for="defaultCheck7"> React </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck8"
+        />
+        <label class="form-check-label" for="defaultCheck8"> Angular </label>
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value=""
+          id="defaultCheck9"
+        />
+        <label class="form-check-label" for="defaultCheck9"> Spring </label>
+      </div>
+      </div>
+
+
+      <div class = "form-grosup">
+        <label for = "name">Suggestions</label>
+        <textarea class = "form-control" rows = "3" placeholder = "Please feel free to suggest us..."></textarea>
+     </div>
+
+      <button type="submit" class="btn btn-lg fw-bold" style="width: 64vw; background-color: rgb(161, 208, 239); color:white;">Submit</button>
+    </form>
+    
+  </body>
+
+  <!-- JavaScript Bundle with Popper (BOOTSTRAP) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"
+  ></script>
+</html>
