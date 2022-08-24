@@ -15,59 +15,74 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background-color:rgb(247, 235, 183)">
-    <h2 class="text-center text-dark m-3" style="font-size: clamp(1.5rem, 5vw, 3rem);">HTML Survey Form</h2>
-<!-- ---------------- -->
-    <div class="radiosDiv">
-      <label for="">Would you recommend us to a friend?</label>
-      <div class="form-check">
-        <input
+  <body style="background-color: rgb(247, 235, 183)">
+    <h2
+      class="text-center text-dark m-3"
+      style="font-size: clamp(1.5rem, 5vw, 3rem)"
+    >
+      HTML Survey Form
+    </h2>
+    <!-- ---------------- -->
+  <div class="formAndColor container d-flex" style="width: 70vw; font-size: clamp(0.5rem, 2,5vw, 10rem)">
+      
+      <div class="radiosDiv m-5 order-1" >
+        <label for="">Arkaplan rengi seçiniz</label>
+        <div class="form-check">
+          <input
           class="form-check-input"
           type="radio"
-          name="exampleRadios"
-          id="exampleRadios1"
-          value="option1"
-          checked          
+          name="pickColor"
+          id="pickColorBlue"
+          value="blue"
+          checked
+          onclick="changeColorFunc('blue')"
+          style="background-color: #93CAED; width: 7vw; height: 7vw; "
         />
-        <label class="form-check-label" for="exampleRadios1"> Yes </label>
+        <!-- <label class="form-check-label" for="pickColorBlue" style="width: 50px;"> Blue </label> -->
       </div>
 
       <div class="form-check">
         <input
           class="form-check-input"
           type="radio"
-          name="exampleRadios"
-          id="exampleRadios2"
-          value="option2"
+          name="pickColor"
+          id="pickColorYellow"
+          value="yellow"
+          onclick="changeColorFunc(this.value)"
+          style="background-color:#F3E0BE; color: #F3E0BE; width: 7vw; height: 7vw;"
         />
-        <label class="form-check-label" for="exampleRadios2"> No </label>
+        <!-- <label class="form-check-label" for="pickColorYellow" style="width: 50px; height: 30px; background-color: #F3E0BE;" >  </label> -->
       </div>
       <div class="form-check">
         <input
           class="form-check-input"
           type="radio"
-          name="exampleRadios"
-          id="exampleRadios3"
-          value="option2"
+          name="pickColor"
+          id="pickColorPink"
+          value="pink"
+          onclick="changeColorFunc(this.value)"
+          style="background-color: #F7CAC9; width: 7vw; height: 7vw;"
         />
-        <label class="form-check-label" for="exampleRadios3"> Maybe </label>
+        <!-- <label class="form-check-label" for="pickColorPink"> Pink </label> -->
       </div>
     </div>
 
-
     <!-- ------------ -->
-    <form class="border mx-auto p-4 bg-white  shadow p-3 mb-5 bg-white rounded" style="width: 70vw; 
-    font-size: clamp(1.5rem, 5vw, 3rem);">
-
-    <p>1.5 rem:</p> <script>let a= 5vw</script>
-    <p>5vw:</p>
-    <p>3 rem:</p>
+    <form
+      class=" border mx-auto p-4 bg-white shadow p-3 mb-5 bg-white rounded"
+    >
+    
       <div class="form-group">
         <label for="name">Name</label>
         <input
           class="form-control"
           type="text"
-          id="name"shadow p-3 mb-5 bg-white rounded
+          id="name"
+          shadow
+          p-3
+          mb-5
+          bg-white
+          rounded
           placeholder="Your Name Here..."
         />
       </div>
@@ -142,99 +157,110 @@
         >Languages and Frameworks known (Check all that applies)</label
       >
       <div class="checkboxDiv">
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="defaultCheck1"
-          
-        />
-        <label class="form-check-label" for="defaultCheck1"> C </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="defaultCheck2"
-        />
-        <label class="form-check-label" for="defaultCheck2"> C++ </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="defaultCheck3"
-        />
-        <label class="form-check-label" for="defaultCheck3"> C# </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="defaultCheck4"
-        />
-        <label class="form-check-label" for="defaultCheck4"> Java </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="defaultCheck5"
-        />
-        <label class="form-check-label" for="defaultCheck5"> Python </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="defaultCheck6"
-        />
-        <label class="form-check-label" for="defaultCheck6">JavaScript </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="defaultCheck7"
-        />
-        <label class="form-check-label" for="defaultCheck7"> React </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="defaultCheck8"
-        />
-        <label class="form-check-label" for="defaultCheck8"> Angular </label>
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
-          id="defaultCheck9"
-        />
-        <label class="form-check-label" for="defaultCheck9"> Spring </label>
-      </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1"> C </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck2"
+          />
+          <label class="form-check-label" for="defaultCheck2"> C++ </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck3"
+          />
+          <label class="form-check-label" for="defaultCheck3"> C# </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck4"
+          />
+          <label class="form-check-label" for="defaultCheck4"> Java </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck5"
+          />
+          <label class="form-check-label" for="defaultCheck5"> Python </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck6"
+          />
+          <label class="form-check-label" for="defaultCheck6"
+            >JavaScript
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck7"
+          />
+          <label class="form-check-label" for="defaultCheck7"> React </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck8"
+          />
+          <label class="form-check-label" for="defaultCheck8"> Angular </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck9"
+          />
+          <label class="form-check-label" for="defaultCheck9"> Spring </label>
+        </div>
       </div>
 
+      <div class="form-grosup">
+        <label for="name">Suggestions</label>
+        <textarea
+          class="form-control"
+          rows="3"
+          placeholder="Please feel free to suggest us..."
+        ></textarea>
+      </div>
 
-      <div class = "form-grosup">
-        <label for = "name">Suggestions</label>
-        <textarea class = "form-control" rows = "3" placeholder = "Please feel free to suggest us..."></textarea>
-     </div>
-
-      <button type="submit" class="btn btn-lg fw-bold" style="width: 64vw; background-color: rgb(161, 208, 239); color:white;">Submit</button>
+      <button
+        type="submit"
+        class="btn btn-lg fw-bold"
+        style="width: 64vw; background-color: rgb(161, 208, 239); color: white"
+      >
+        Submit
+      </button>
     </form>
-    
+  </div>
+
   </body>
 
   <!-- JavaScript Bundle with Popper (BOOTSTRAP) -->
@@ -243,4 +269,5 @@
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"
   ></script>
+  <script src="./script.js"></script>
 </html>
