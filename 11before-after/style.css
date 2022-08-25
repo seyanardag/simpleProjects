@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+p {
+    text-align: center;
+    font-size: 2rem;
+    display: block;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+p::before {
+    content: url(//unsplash.it/50/50);
+    
+    /* display: block; */
+    background-color: blueviolet;
+    /* position: absolute;
+    top: 150px;
+    left: 20px; */
+
+}
+
+p::after{
+    content: "son";
+    background-color: cadetblue;
+    margin: 1rem;
+    display: block;
+}
+
+blockquote{
+    font-size: xx-large;
+    text-align: center;
+    margin: 50px;
+    background-color: burlywood;
+}
+blockquote::before{
+    content: open-quote;
+    color: #ddd;
+}
+
+blockquote::after{
+    content: close-quote;
+    color: blue;
+    color: rgb(45, 200, 79);
+}
