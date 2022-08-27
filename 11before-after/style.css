@@ -63,8 +63,9 @@ blockquote::after{
 
 }
 
-.dolorSitLink:hover::before {
+.dolorSitLink::before {
     content: "I like to pop up!";
+    font-size: .8em;
     display: block;
     position: absolute;
     bottom: 1.2em;
@@ -77,16 +78,56 @@ blockquote::after{
     padding: 7px 12px;
     border-radius: 8px;
 
-    animation: tooltipKeyFrame 200ms;
-    /* transition: scale(0); */
+    /* visibility: hidden; */
+    transform: scale(0);
+    transition: transform 200ms;
 }
 
-@keyframes tooltipKeyFrame {
-    from {
-        scale: 0;
-    }
-    to {
-        scale: 1;
+.dolorSitLink:hover::before {
+    /* visibility: visible; */
+    transform:scale(1);
+}
 
-    }
+
+.decorations {
+    text-align: center;
+}
+
+.section-with-deco {
+    margin: 60px 40px;
+}
+
+.section-with-deco::before {
+    content: url(//unsplash.it/400/10);
+    display: block;
+}
+
+.deneme{
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    transition: width 2s, height 2s, background-color 2s, transform 2s ease-in-out;
+    transform:rotate(0)
+}
+
+.deneme:hover {
+    width: 300px;
+    height: 150px;
+    background-color: blue;
+    transform: rotate(180deg);
+}
+
+
+
+.deneme2 {
+    visibility:visible;
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;    
+}
+
+.deneme2:hover {
+    transition: width 2s, height 3s;
+    width: 200px;
+    height: 200px;
 }
