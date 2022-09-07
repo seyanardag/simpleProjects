@@ -77,20 +77,37 @@ blockquote::after{
     white-space: nowrap;
     padding: 7px 12px;
     border-radius: 8px;
-
-    /* visibility: hidden; */
     transform: scale(0);
     transition: transform 200ms;
 }
 
 .dolorSitLink:hover::before {
-    /* visibility: visible; */
     transform:scale(1);
 }
 
 
 .decorations {
     text-align: center;
+    counter-reset: sectionCounter;
+}
+
+.decorations h1::before {
+    counter-increment: sectionCounter;
+    content: counter(sectionCounter);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 0.7em;
+    border: 2px solid black;
+    border-radius: 50%; 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1em;
+    height: 1.2em;
+    padding: 5px;
+    margin: 10px;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 5px rgb(189, 189, 194);  
 }
 
 .section-with-deco {

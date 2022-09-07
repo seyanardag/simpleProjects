@@ -13,17 +13,14 @@
     /* bu da kullanılabilir; */
     /* rotate: 180deg; */
 }
-/* div { */
-    /* background-color: blue; */
-/* } */
 
-/* .container {
-    display: flex;
-    flex-direction: column;
+.scoreboard {
+    transform: scale(0);
+    transition: transform 1s;
+}
 
+.scoreboard2 {
+    transform: scale(1)
 }
-.score {
-    display: flex;
-    align-self: flex-end;
-}
- */
+
+

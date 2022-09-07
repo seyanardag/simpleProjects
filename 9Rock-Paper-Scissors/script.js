@@ -41,6 +41,7 @@ function pcSelectFunc(min, max) {
 function playerSelected(param) {
   // playerHand.style.transform = 2,5
   scoreboard.style.visibility = "visible"
+  scoreboard.classList.add("scoreboard2")
   pcSelectFunc(1, 4);
   pcHand.classList.add("rotate180")
   playerSelection = param; //player selection assignment
