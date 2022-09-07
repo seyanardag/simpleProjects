@@ -2,8 +2,8 @@ console.log("adsad");
 let pcSelection = 0;
 let playerSelection = 0;
 let result = 0;
-let pcScore =0;
-let playerScore =0;
+let pcScore = 0;
+let playerScore = 0;
 
 let pcScoreHTML = document.querySelector(".pcScore");
 let playerScoreHTML = document.querySelector(".playerScore");
@@ -36,65 +36,87 @@ function pcSelectFunc(min, max) {
   }
 }
 
-
-
 function playerSelected(param) {
   // playerHand.style.transform = 2,5
-  scoreboard.style.visibility = "visible"
-  scoreboard.classList.add("scoreboard2")
+  scoreboard.style.visibility = "visible";
+  scoreboard.classList.add("scoreboard2");
   pcSelectFunc(1, 4);
-  pcHand.classList.add("rotate180")
+  pcHand.classList.add("rotate180");
   playerSelection = param; //player selection assignment
 
   playerHand.src = `./img/${param}.png`;
 
   console.log("pcSelection:", pcSelection, "playerSelection:", playerSelection);
 
+  function drawFunc() {
+    resultHTML.innerHTML = "Draw, Pick Again!";    
+    resultHTML.style.backgroundColor = "DodgerBlue";
+    resultHTML.style.color = "white";
+  }
+  function playerWonFunc() {
+    resultHTML.innerHTML = "Player Won!";
+    resultHTML.style.backgroundColor = "ForestGreen";
+    resultHTML.style.color = "white";
+    playerScore++;
+    playerScoreHTML.innerHTML = playerScore;
+    console.log(pcScore, playerScore);
+    
+  }
+  function pcWonFunc() {
+    resultHTML.innerHTML = "PC WON";
+    resultHTML.style.backgroundColor = "FireBrick";
+    resultHTML.style.color = "white";
+    pcScore++;
+    pcScoreHTML.innerHTML = pcScore;
+    console.log(pcScore, playerScore);
+  }
+
   switch (true) {
     case pcSelection == playerSelection:
-      resultHTML.innerHTML = "Draw, Pick Again!";
+      drawFunc();
       break;
-          
-      
+
     case pcSelection == "rock" && playerSelection == "paper":
-      resultHTML.innerHTML = "Player Won!";
-      playerScore++
-      playerScoreHTML.innerHTML= playerScore
-      console.log(pcScore,playerScore)
+      playerWonFunc();
       break;
     case pcSelection == "rock" && playerSelection == "scissors":
-      resultHTML.innerHTML = "PC WON";
-      pcScore++
-      pcScoreHTML.innerHTML= pcScore
-      console.log(pcScore,playerScore)
+      pcWonFunc();
       break;
-    case pcSelection == "paper" && playerSelection == "rock":
-      resultHTML.innerHTML = "PC WON";
-      pcScore++
-      pcScoreHTML.innerHTML= pcScore
-      console.log(pcScore,playerScore)
+      case pcSelection == "paper" && playerSelection == "rock":
+        pcWonFunc();
+        
+      // resultHTML.innerHTML = "PC WON";
+      // pcScore++;
+      // pcScoreHTML.innerHTML = pcScore;
+      // console.log(pcScore, playerScore);
       break;
     case pcSelection == "paper" && playerSelection == "scissors":
-      resultHTML.innerHTML = "Player WON";
-      playerScore++
-      playerScoreHTML.innerHTML= playerScore
-      console.log(pcScore,playerScore)
+      playerWonFunc();
+
+      // resultHTML.innerHTML = "Player WON";
+      // playerScore++;
+      // playerScoreHTML.innerHTML = playerScore;
+      // console.log(pcScore, playerScore);
       break;
     case pcSelection == "scissors" && playerSelection == "rock":
-      resultHTML.innerHTML = "Player WON";
-      playerScore++
-      playerScoreHTML.innerHTML= playerScore
-      console.log(pcScore,playerScore)
+      playerWonFunc();
+
+      // resultHTML.innerHTML = "Player WON";
+      // playerScore++;
+      // playerScoreHTML.innerHTML = playerScore;
+      // console.log(pcScore, playerScore);
       break;
     case pcSelection == "scissors" && playerSelection == "paper":
-      resultHTML.innerHTML = "PC WON";
-      pcScore++
-      pcScoreHTML.innerHTML= pcScore
-      console.log(pcScore,playerScore)
+      playerWonFunc();
+
+      // resultHTML.innerHTML = "PC WON";
+      // pcScore++;
+      // pcScoreHTML.innerHTML = pcScore;
+      // console.log(pcScore, playerScore);
       break;
-      
-      default:
-        resultHTML.innerHTML = "Something Went WRONG :( !!!";
+
+    default:
+      resultHTML.innerHTML = "Something Went WRONG :( !!!";
 
       break;
   }
