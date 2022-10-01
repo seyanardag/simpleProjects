@@ -42,6 +42,7 @@ function findResult() {
   screenDigit.innerHTML = "";
   setTimeout(() => {
     screenDigit.innerHTML = eval(tempResult);
+    number1 = screenDigit.innerHTML;
   }, 300);
   isScrnEmpty = false;
 }
