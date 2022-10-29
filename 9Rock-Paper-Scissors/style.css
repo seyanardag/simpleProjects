@@ -18,13 +18,13 @@
 
 .scoreboard {
     transform: scale(0);
-    transition: transform 1s;
+    transition: transform 5s;
     
     
 }
 
 .scoreboard2 {
-    transform: scale(1);
+    transform: scale(2);
     
 }
 
