@@ -59,7 +59,12 @@ function Bspc() {
     screenDigit.innerHTML += element
   
   });
-  number1=screenDigit.innerHTML
-  console.log(screenDigit.innerHTML)
+  console.log("screenDigit.length",screenDigit.length )
+    if (screenDigit.innerHTML == 0) {
+      screenDigit.innerHTML=0;      
+    } else {
+      number1=screenDigit.innerHTML
+      console.log(screenDigit.innerHTML)
+    }
 
 }
